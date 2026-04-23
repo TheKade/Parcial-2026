@@ -30,7 +30,6 @@ Recibirás la ficha de un personaje de videojuego hecha con HTML malo. Tu tarea 
 ### 3. CSS Moderno (crear `style.css`)
 - Definir layout macro con `grid-template-areas` para `header`, `main` y `footer`.
 - Usar `display: flex` para la barra de navegación y las etiquetas de habilidades (`.tags`).
-- Implementar breakpoint en `768px`: la grilla de stats pasa de **2 columnas a 1**.
 - Eliminar los estilos inline y el bloque `<style>` del HTML.
 
 ### 4. JavaScript (crear `script.js`)
@@ -69,7 +68,7 @@ El archivo se vincula desde el HTML con `<script src="script.js"></script>`. Ver
 | :--- | :--- |
 | **HTML** | La estructura principal sigue siendo `<div>` anidados. |
 | **Accesibilidad** | El formulario no tiene `<label>` o las imágenes no tienen `alt`. |
-| **CSS** | No se usa Grid para el layout. El sitio no es responsive. |
+| **CSS** | No se usa Grid para el layout. |
 | **JavaScript** | Errores en consola que impidan la ejecución del script. El archivo `script.js` no existe o no está vinculado al HTML. |
 | **Git** | Un solo commit con todo el trabajo, o mensajes sin formato descriptivo. |
 | **IA_HISTORY.md** | Secciones vacías, respuestas de una sola oración, o análisis sin fundamento técnico. |
