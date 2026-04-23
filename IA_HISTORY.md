@@ -1,22 +1,7 @@
 # IA_HISTORY.md — Registro de Uso de IA
 
 **Alumno/a:** Matias Sousa
-**Fecha:** "23//04/2026"
-
----
-
-> **Instrucciones:** Documentar los 2 prompts más importantes que usaste durante el examen.
-> Completar **todas** las secciones con criterio propio. No se trata de copiar lo que generó la IA — se evalúa tu capacidad de analizar, detectar errores y tomar decisiones técnicas fundamentadas.
->
-> **Mínimo por sección de análisis: 3 oraciones.** Respuestas de una línea no se consideran válidas.
-
----
-
-> **Ejemplo de análisis insuficiente** ❌
-> _"La IA generó el código y funcionó bien."_
->
-> **Ejemplo de análisis aceptable** ✅
-> _"La IA reemplazó los `<div>` por etiquetas semánticas, pero usó `<section>` para la navegación en lugar de `<nav>`. Lo detecté al revisar la estructura en DevTools. Técnicamente es incorrecto porque `<nav>` tiene un rol ARIA implícito que `<section>` no tiene, así que lo corregí manualmente."_
+**Fecha:** 23/04/2026
 
 ---
 
@@ -24,52 +9,21 @@
 
 ### Momento del proceso
 
-```
-<!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
-
-  Cuando no sabia linkear correctamente el Git.
--->
-```
+Cuando estaba corrigiendo el HTML original, especialmente al reemplazar los `<div>` por etiquetas semánticas. Tenía dudas sobre qué etiquetas usar en cada sección (por ejemplo, navegación, contenido principal y tarjetas).
 
 ### Lo que le pedí a la IA
 
 ```
-<!-- Voy a necesitar que me ayudes a conectar en git al fork de mi repositorio y el del profesor. -->
+Corrigime este HTML reemplazando los div por etiquetas semánticas correctas y manteniendo la estructura del contenido
 ```
 
 ### Análisis del resultado obtenido
 
-```
-<!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  Intento conectarme directamente con el repo y creo codigo que alucino.
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  Realmente no era lo que esperaba, era algo sencillo como un git fork y clone repo.
-  - ¿Qué parte te resultó útil como punto de partida?
-  Si porque me saco los nervios del parcial
--->
-```
+La IA generó una estructura más ordenada usando etiquetas como `<header>`, `<nav>`, `<main>`, `<section>` y `<article>`. El enfoque fue correcto en términos generales, ya que respetó la jerarquía del contenido y mejoró la semántica. Sin embargo, en algunos casos utilizó `<section>` donde correspondía `<nav>` o no agrupó correctamente elementos de navegación en listas. Aun así, me sirvió como base para entender cómo reorganizar el documento.
 
 ### Qué debí corregir manualmente y por qué
 
-```
-<!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
--->
-```
+Tuve que ajustar la navegación, ya que la IA no utilizó una lista (`<ul>` con `<li>`) para los links, lo cual es una práctica recomendada para accesibilidad. También agregué atributos `alt` en imágenes que la IA dejó incompletos o genéricos. Además, reemplacé algunos textos estructurales mal ubicados en `<div>` por etiquetas como `<h1>`, `<p>` y `<dl>`. Detecté estos problemas revisando el código manualmente y comparándolo con buenas prácticas de HTML semántico.
 
 ---
 
@@ -77,61 +31,24 @@
 
 ### Momento del proceso
 
-```
-<!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
--->
-```
+Al comenzar la parte de JavaScript, cuando necesitaba implementar las funciones pedidas en el enunciado y asegurarme de que cumplieran con los requisitos.
 
 ### Lo que le pedí a la IA
 
 ```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
+Creame un script.js con variables y funciones en JavaScript para un personaje que calcule daño, verifique si está vivo, si puede lanzar hechizos y genere una presentación con console.log
 ```
 
 ### Análisis del resultado obtenido
 
-```
-<!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
--->
-```
+La IA generó un archivo con variables bien definidas y funciones separadas para cada requerimiento. El enfoque fue correcto, utilizando funciones declaradas y arrow functions según lo solicitado. Además, incluyó `console.log` para mostrar resultados, lo cual coincidía con lo pedido en el examen. El resultado fue bastante cercano a lo esperado y sirvió como base funcional.
 
 ### Qué debí corregir manualmente y por qué
 
-```
-<!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  El error concreto es es que la ai asumio que yo estaba pusheando mi codigo directamente en mi repo. Pero realmente no estaba linkeado.
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  Lo detecte cuando hice un git status desde mi consola para verificar que este todo correcto.
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
-
-  para conectarme git remote set-url origin https://github.com/TheKade/examen-filtro-2026.git
--->
-```
+Tuve que revisar la lógica para asegurar que cumpliera exactamente con el enunciado, especialmente en `calculateDamage`, donde era necesario devolver 0 si el resultado era negativo. También verifiqué que no hubiera números mágicos y que se usaran las variables declaradas como parámetros. Ajusté nombres de variables para que fueran más descriptivos y consistentes con el dominio del problema. Detecté estos detalles al probar el código en la consola del navegador y revisar las condiciones solicitadas en el enunciado.
 
 ---
 
 ## Reflexión final
 
-```
-<!--
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué tipo de errores repitió la IA que tuviste que corregir?
-  - ¿Hubo algo que la IA resolvió bien a la primera sin que necesitaras tocarlo?
-  - ¿Cambiarías la forma en que le pedís cosas a la IA la próxima vez? ¿Por qué?
--->
-```
+La IA fue útil como punto de partida, pero cometió errores principalmente en aspectos de semántica HTML y buenas prácticas de accesibilidad. En varios casos generó código funcional, pero no completamente alineado con los requisitos específicos del examen. Sin embargo, en JavaScript la ayuda fue más precisa y requirió menos correcciones. Para futuros usos, intentaría ser más específico en los prompts, indicando restricciones claras como “usar etiquetas semánticas correctas y accesibles” o “cumplir exactamente con las condiciones del enunciado”, para obtener resultados más ajustados.
